@@ -1,0 +1,22 @@
+[
+  {
+    "description": "Более 100 курсов для улучшения себя",
+    "icon": "https://storage.yandexcloud.net/ball-in-media/subscription/subscription_benefit/icon/icon.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=YCAJEO1NAoqrKPdTGNBngNkjV%2F20250326%2Fru-central1%2Fs3%2Faws4_request&X-Amz-Date=20250326T085421Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=017293b6bd10fc5b82a715fb4e2d3f0465ad56c9326b2bb40317c31b77ce683a",
+    "title": "Доступ ко всем курсам"
+  },
+  {
+    "description": "Новые тренировки каждый день",
+    "icon": "https://storage.yandexcloud.net/ball-in-media/subscription/subscription_benefit/icon/icon_oSLHPWW.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=YCAJEO1NAoqrKPdTGNBngNkjV%2F20250326%2Fru-central1%2Fs3%2Faws4_request&X-Amz-Date=20250326T085421Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=afa38da3e74332c2c86d7339885ca91aaa442a30b5e32993b70707414f3b6bd4",
+    "title": "Доступ к тренировкам"
+  },
+  {
+    "description": "Получайте призы за специальные активности",
+    "icon": "https://storage.yandexcloud.net/ball-in-media/subscription/subscription_benefit/icon/icon_ktfXtOc.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=YCAJEO1NAoqrKPdTGNBngNkjV%2F20250326%2Fru-central1%2Fs3%2Faws4_request&X-Amz-Date=20250326T085421Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=a8632df7b72e0dc0c804a017eef71bb15ba0255b2e664093a32ee00926c71edc",
+    "title": "Проходите и запускайте челленджи"
+  },
+  {
+    "description": "Получайте призы за специальные активности",
+    "icon": "https://storage.yandexcloud.net/ball-in-media/subscription/subscription_benefit/icon/icon_NQmxYMm.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=YCAJEO1NAoqrKPdTGNBngNkjV%2F20250326%2Fru-central1%2Fs3%2Faws4_request&X-Amz-Date=20250326T085421Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=e031f89ff97e7860560b721782995b705c11673f5e8b445de796b7f0c89c0bb3",
+    "title": "Участвуйте в ивентах"
+  }
+]

@@ -1,0 +1,35 @@
+//
+// {{ name }}View.swift
+//
+{% if author %}
+// Created by {{ author }}.
+{% endif %}
+// Copyright © {{ year }} Spider Group. All rights reserved.
+//
+
+import DesignSystem
+import SwiftUI
+
+struct  {{ name }}View: View {
+    @ObservedObject
+    var data: {{ name }}ViewData
+    
+    var body: some View {
+        VStack{
+            Text("\(data)")
+        }
+    }
+}
+
+#Preview {
+    {{ name }}View(data: .init(data: 1))
+}
+
+class {{ name }}ViewData: ObservableObject {
+    @Published
+    var data: Int
+    init(data: Int) {
+        self.data = data
+    }
+   
+}

@@ -1,0 +1,27 @@
+//
+// {{ module }}ServiceImpl.swift
+//
+{% if author %}
+// Created by {{ author }}.
+{% endif %}
+// Copyright © {{ year }} Spider Group. All rights reserved.
+//
+
+import Platform
+import RxSwift
+
+final class {{ module }}ServiceImpl {
+
+    private let apiClient: ApiClient
+    private let errorTranslator: AnyErrorTranslator<ApiErrorModel, UnspecifiedDomainError>
+
+    init(
+        apiClient: ApiClient,
+        errorTranslator: AnyErrorTranslator<ApiErrorModel, UnspecifiedDomainError>
+    ) {
+        self.apiClient = apiClient
+        self.errorTranslator = errorTranslator
+    }
+}
+
+extension {{ module }}ServiceImpl: {{ module }}Service {}

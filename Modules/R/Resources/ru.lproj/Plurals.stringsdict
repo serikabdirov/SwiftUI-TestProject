@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>exercise.detail.execution.repetitions</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@count_var@</string>
+		<key>count_var</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>zero</key>
+			<string>Выполните %d повторений</string>
+			<key>one</key>
+			<string>Выполните %d повторение</string>
+			<key>two</key>
+			<string>Выполните %d повторения</string>
+			<key>few</key>
+			<string>Выполните %d повторения</string>
+			<key>many</key>
+			<string>Выполните %d повторений</string>
+			<key>other</key>
+			<string>Выполните %d повторений</string>
+		</dict>
+	</dict>
+	<key>auth.code.error</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@count_var@</string>
+		<key>count_var</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>zero</key>
+			<string>Неверный код
+Осталось %d попыток входа</string>
+			<key>one</key>
+			<string>Неверный код
+Осталась %d попытка входа</string>
+			<key>two</key>
+			<string>Неверный код
+Осталось %d попытки входа</string>
+			<key>few</key>
+			<string>Неверный код
+Осталось %d попытки входа</string>
+			<key>many</key>
+			<string>Неверный код
+Осталось %d попыток входа</string>
+			<key>other</key>
+			<string>Неверный код
+Осталось %d попыток входа</string>
+		</dict>
+	</dict>
+	<key>auth.code.retry.attempts</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@count_var@</string>
+		<key>count_var</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>zero</key>
+			<string>Осталось %d запросов смс</string>
+			<key>one</key>
+			<string>Остался %d запрос смс</string>
+			<key>two</key>
+			<string>Осталось %d запроса смс</string>
+			<key>few</key>
+			<string>Осталось %d запроса смс</string>
+			<key>many</key>
+			<string>Осталось %d запросов смс</string>
+			<key>other</key>
+			<string>Осталось %d запросов смс</string>
+		</dict>
+	</dict>
+	<key>main.meditations.available</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@count_var@</string>
+		<key>count_var</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>zero</key>
+			<string>нет доступных медитаций</string>
+			<key>one</key>
+			<string>%d медитация доступна</string>
+			<key>two</key>
+			<string>%d медитации доступны</string>
+			<key>few</key>
+			<string>%d медитации доступны</string>
+			<key>many</key>
+			<string>%d медитаций доступно</string>
+			<key>other</key>
+			<string>%d медитаций доступно</string>
+		</dict>
+	</dict>
+	<key>main.treanings.exersice.amount</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@count_var@</string>
+		<key>count_var</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>zero</key>
+			<string>%d упражнений</string>
+			<key>one</key>
+			<string>%d упражнение</string>
+			<key>two</key>
+			<string>%d упражнения</string>
+			<key>few</key>
+			<string>%d упражнения</string>
+			<key>many</key>
+			<string>%d упражнений</string>
+			<key>other</key>
+			<string>%d упражнений</string>
+		</dict>
+	</dict>
+	<key>main.courses.exersice.amount</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@count_var@</string>
+		<key>count_var</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>zero</key>
+			<string>%d занятий</string>
+			<key>one</key>
+			<string>%d занятие</string>
+			<key>two</key>
+			<string>%d занятия</string>
+			<key>few</key>
+			<string>%d занятия</string>
+			<key>many</key>
+			<string>%d занятий</string>
+			<key>other</key>
+			<string>%d занятий</string>
+		</dict>
+	</dict>
+	<key>main.price</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@count_var@</string>
+		<key>count_var</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>zero</key>
+			<string>%d баллов</string>
+			<key>one</key>
+			<string>%d балл</string>
+			<key>two</key>
+			<string>%d балла</string>
+			<key>few</key>
+			<string>%d балла</string>
+			<key>many</key>
+			<string>%d баллов</string>
+			<key>other</key>
+			<string>%d баллов</string>
+		</dict>
+	</dict>
+	<key>main.minutes</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@count_var@</string>
+		<key>count_var</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>zero</key>
+			<string>%d минут</string>
+			<key>one</key>
+			<string>%d минута</string>
+			<key>two</key>
+			<string>%d минуты</string>
+			<key>few</key>
+			<string>%d минуты</string>
+			<key>many</key>
+			<string>%d минут</string>
+			<key>other</key>
+			<string>%d минут</string>
+		</dict>
+	</dict>
+	<key>training.details.finished.body.full</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@count_var@</string>
+		<key>count_var</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>zero</key>
+			<string>Тренировка выполнена успешно.
+Вам будет начислено %d баллов</string>
+			<key>one</key>
+			<string>Тренировка выполнена успешно.
+Вам будет начислено %d балл</string>
+			<key>two</key>
+			<string>Тренировка выполнена успешно.
+Вам будет начислено %d балла</string>
+			<key>few</key>
+			<string>Тренировка выполнена успешно.
+Вам будет начислено %d балла</string>
+			<key>many</key>
+			<string>Тренировка выполнена успешно.
+Вам будет начислено %d баллов</string>
+			<key>other</key>
+			<string>Тренировка выполнена успешно.
+Вам будет начислено %d баллов</string>
+		</dict>
+	</dict>
+	<key>courses.practices.count</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@count_var@</string>
+		<key>count_var</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>zero</key>
+			<string>%d занятий</string>
+			<key>one</key>
+			<string>%d занятие</string>
+			<key>two</key>
+			<string>%d занятия</string>
+			<key>few</key>
+			<string>%d занятия</string>
+			<key>many</key>
+			<string>%d занятий</string>
+			<key>other</key>
+			<string>%d занятий</string>
+		</dict>
+	</dict>
+	<key>bonus.count</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@count_var@</string>
+		<key>count_var</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>zero</key>
+			<string>%d бонусных баллов</string>
+			<key>one</key>
+			<string>%d бонусный балл</string>
+			<key>two</key>
+			<string>%d бонусных балла</string>
+			<key>few</key>
+			<string>%d бонусных балла</string>
+			<key>many</key>
+			<string>%d бонусных баллов</string>
+			<key>other</key>
+			<string>%d бонусных баллов</string>
+		</dict>
+	</dict>
+	<key>bonuses.award</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%d/%#@total@</string>
+		<key>total</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>zero</key>
+			<string>%2$d баллов</string>
+			<key>one</key>
+			<string>%2$d балла</string>
+			<key>two</key>
+			<string>%2$d баллов</string>
+			<key>few</key>
+			<string>%2$d баллов</string>
+			<key>many</key>
+			<string>%2$d баллов</string>
+			<key>other</key>
+			<string>%2$d баллов</string>
+		</dict>
+	</dict>
+	<key>statistics.competitions.challenges</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@count_var@</string>
+		<key>count_var</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>zero</key>
+			<string>челленджей</string>
+			<key>one</key>
+			<string>челлендж</string>
+			<key>two</key>
+			<string>челленджа</string>
+			<key>few</key>
+			<string>челленджа</string>
+			<key>many</key>
+			<string>челленджей</string>
+			<key>other</key>
+			<string>челленджей</string>
+		</dict>
+	</dict>
+	<key>statistics.courses.trainings.planned</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@count_var@</string>
+		<key>count_var</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>zero</key>
+			<string>тренировок</string>
+			<key>one</key>
+			<string>тренировка</string>
+			<key>two</key>
+			<string>тренировки</string>
+			<key>few</key>
+			<string>тренировок</string>
+			<key>many</key>
+			<string>тренировок</string>
+			<key>other</key>
+			<string>тренировок</string>
+		</dict>
+	</dict>
+	<key>events.detail.participants.number</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@count_var@</string>
+		<key>count_var</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>zero</key>
+			<string>Завершило %d человек</string>
+			<key>one</key>
+			<string>Завершил %d человек</string>
+			<key>two</key>
+			<string>Завершили %d человека</string>
+			<key>few</key>
+			<string>Завершили %d человека</string>
+			<key>many</key>
+			<string>Завершили %d человека</string>
+			<key>other</key>
+			<string>Завершили %d человека</string>
+		</dict>
+	</dict>
+    <key>challenges.details.age.group.full</key>
+    <dict>
+        <key>NSStringLocalizedFormatKey</key>
+        <string>от %d до %#@upper_age@</string>
+        <key>upper_age</key>
+        <dict>
+            <key>NSStringFormatSpecTypeKey</key>
+            <string>NSStringPluralRuleType</string>
+            <key>NSStringFormatValueTypeKey</key>
+            <string>d</string>
+            <key>zero</key>
+            <string>%2$d лет</string>
+            <key>one</key>
+            <string>%2$d года</string>
+            <key>two</key>
+            <string>%2$d лет</string>
+            <key>few</key>
+            <string>%2$d лет</string>
+            <key>many</key>
+            <string>%2$d лет</string>
+            <key>other</key>
+            <string>%2$d лет</string>
+        </dict>
+    </dict>
+    <key>challenges.details.rating.boundary.full</key>
+     <dict>
+         <key>NSStringLocalizedFormatKey</key>
+         <string>от %d до %#@count_var@</string>
+         <key>count_var</key>
+         <dict>
+             <key>NSStringFormatSpecTypeKey</key>
+             <string>NSStringPluralRuleType</string>
+             <key>NSStringFormatValueTypeKey</key>
+             <string>d</string>
+             <key>zero</key>
+             <string>%2$d очков</string>
+             <key>one</key>
+             <string>%2$d очка</string>
+             <key>two</key>
+             <string>%2$d очков</string>
+             <key>few</key>
+             <string>%2$d очков</string>
+             <key>many</key>
+             <string>%2$d очков</string>
+             <key>other</key>
+             <string>%2$d очков</string>
+         </dict>
+     </dict>
+     <key>challenges.details.participants.number</key>
+     <dict>
+         <key>NSStringLocalizedFormatKey</key>
+         <string>%#@count_var@</string>
+         <key>count_var</key>
+         <dict>
+             <key>NSStringFormatSpecTypeKey</key>
+             <string>NSStringPluralRuleType</string>
+             <key>NSStringFormatValueTypeKey</key>
+             <string>d</string>
+             <key>zero</key>
+             <string>Присоединилось %d человек</string>
+             <key>one</key>
+             <string>Присоединился %d человек</string>
+             <key>two</key>
+             <string>Присоединилось %d человек</string>
+             <key>few</key>
+             <string>Присоединилось %d человек</string>
+             <key>many</key>
+             <string>Присоединилось %d человек</string>
+             <key>other</key>
+             <string>Присоединилось %d человек</string>
+         </dict>
+     </dict>
+     <key>challenges.finish.challenge.body</key>
+     <dict>
+         <key>NSStringLocalizedFormatKey</key>
+         <string>%#@count_var@</string>
+         <key>count_var</key>
+         <dict>
+             <key>NSStringFormatSpecTypeKey</key>
+             <string>NSStringPluralRuleType</string>
+             <key>NSStringFormatValueTypeKey</key>
+             <string>d</string>
+             <key>zero</key>
+             <string>Челлендж успешно завершен.
+                 Вам будет начислено %d очков рейтинга</string>
+             <key>one</key>
+             <string>Челлендж успешно завершен.
+                 Вам будет начислено %d очко рейтинга</string>
+             <key>two</key>
+             <string>Челлендж успешно завершен.
+                 Вам будет начислено %d очка рейтинга</string>
+             <key>few</key>
+             <string>Челлендж успешно завершен.
+                 Вам будет начислено %d очка рейтинга</string>
+             <key>many</key>
+             <string>Челлендж успешно завершен.
+                 Вам будет начислено %d очков рейтинга</string>
+             <key>other</key>
+             <string>Челлендж успешно завершен.
+                 Вам будет начислено %d очков рейтинга</string>
+         </dict>
+     </dict>
+</dict>
+</plist>

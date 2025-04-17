@@ -1,0 +1,185 @@
+{
+  "pins" : [
+    {
+      "identity" : "alamofire",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Alamofire/Alamofire",
+      "state" : {
+        "revision" : "513364f870f6bfc468f9d2ff0a95caccc10044c5",
+        "version" : "5.10.2"
+      }
+    },
+    {
+      "identity" : "bettercodable",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/marksands/BetterCodable",
+      "state" : {
+        "revision" : "61153170668db7a46a20a87e35e70f80b24d4eb5",
+        "version" : "0.4.0"
+      }
+    },
+    {
+      "identity" : "bottomsheet",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/joomcode/BottomSheet",
+      "state" : {
+        "revision" : "15ab2cf96b757b72b09a6515f667685ff55924e1",
+        "version" : "2.0.5"
+      }
+    },
+    {
+      "identity" : "ditranquillity",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ivlevAstef/DITranquillity",
+      "state" : {
+        "revision" : "e40713935369ccbbd2877712f1261131a2504fe0",
+        "version" : "4.7.0"
+      }
+    },
+    {
+      "identity" : "iqkeyboardcore",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/hackiftekhar/IQKeyboardCore.git",
+      "state" : {
+        "revision" : "ae9d197f1d8c491b312e30eafb0193d164519c5a",
+        "version" : "1.0.7"
+      }
+    },
+    {
+      "identity" : "iqkeyboardmanager",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/hackiftekhar/IQKeyboardManager.git",
+      "state" : {
+        "revision" : "555472fdb20a96127643d48d101ef981a40993b6",
+        "version" : "8.0.1"
+      }
+    },
+    {
+      "identity" : "iqkeyboardnotification",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/hackiftekhar/IQKeyboardNotification.git",
+      "state" : {
+        "revision" : "25c6a83380042141d9a2f80cdb2832595a7bf6bc",
+        "version" : "1.0.5"
+      }
+    },
+    {
+      "identity" : "iqkeyboardreturnmanager",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/hackiftekhar/IQKeyboardReturnManager.git",
+      "state" : {
+        "revision" : "bc5c272e4d37cc217a3d10d052557a1916c09cf9",
+        "version" : "1.0.5"
+      }
+    },
+    {
+      "identity" : "iqkeyboardtoolbar",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/hackiftekhar/IQKeyboardToolbar.git",
+      "state" : {
+        "revision" : "78ccb63857a03334ecfcba566f8f504015965ee3",
+        "version" : "1.1.1"
+      }
+    },
+    {
+      "identity" : "iqkeyboardtoolbarmanager",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/hackiftekhar/IQKeyboardToolbarManager.git",
+      "state" : {
+        "revision" : "ec26659062e6b9bc65e26643269f38eca46846d7",
+        "version" : "1.1.3"
+      }
+    },
+    {
+      "identity" : "iqtextinputviewnotification",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/hackiftekhar/IQTextInputViewNotification.git",
+      "state" : {
+        "revision" : "4347f8eb6bf8880014606684105e447229cc29ea",
+        "version" : "1.0.8"
+      }
+    },
+    {
+      "identity" : "iqtextview",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/hackiftekhar/IQTextView.git",
+      "state" : {
+        "revision" : "76f514eba5218bdf67659168ba227c77da5f75fe",
+        "version" : "1.0.5"
+      }
+    },
+    {
+      "identity" : "keychainaccess",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/kishikawakatsumi/KeychainAccess.git",
+      "state" : {
+        "revision" : "84e546727d66f1adc5439debad16270d0fdd04e7",
+        "version" : "4.2.2"
+      }
+    },
+    {
+      "identity" : "nuke",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/kean/Nuke",
+      "state" : {
+        "revision" : "0ead44350d2737db384908569c012fe67c421e4d",
+        "version" : "12.8.0"
+      }
+    },
+    {
+      "identity" : "phonenumberkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/marmelroy/PhoneNumberKit",
+      "state" : {
+        "revision" : "288b99e9e99926bc8be41220802df83c059fac9b",
+        "version" : "4.0.2"
+      }
+    },
+    {
+      "identity" : "pulse",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/kean/Pulse",
+      "state" : {
+        "revision" : "6125ce7fb51b114ba71b761d18cfd5557923bd4d",
+        "version" : "5.1.4"
+      }
+    },
+    {
+      "identity" : "route-composer",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ekazaev/route-composer",
+      "state" : {
+        "revision" : "a560eae9f43d64f379cefcac3c338f86179e8cdf",
+        "version" : "2.11.1"
+      }
+    },
+    {
+      "identity" : "rxswift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ReactiveX/RxSwift.git",
+      "state" : {
+        "revision" : "5dd1907d64f0d36f158f61a466bab75067224893",
+        "version" : "6.9.0"
+      }
+    },
+    {
+      "identity" : "snapkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SnapKit/SnapKit",
+      "state" : {
+        "revision" : "2842e6e84e82eb9a8dac0100ca90d9444b0307f4",
+        "version" : "5.7.1"
+      }
+    },
+    {
+      "identity" : "swiftlazy",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ivlevAstef/SwiftLazy.git",
+      "state" : {
+        "revision" : "9b267a90bde85f07f372b1ac90a7ad88f434cd06",
+        "version" : "1.5.0"
+      }
+    }
+  ],
+  "version" : 2
+}

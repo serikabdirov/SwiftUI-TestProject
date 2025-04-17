@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>exercise.detail.execution.repetitions</key>
+    <dict>
+        <key>NSStringLocalizedFormatKey</key>
+        <string>%#@count_var@</string>
+        <key>count_var</key>
+        <dict>
+            <key>NSStringFormatSpecTypeKey</key>
+            <string>NSStringPluralRuleType</string>
+            <key>NSStringFormatValueTypeKey</key>
+            <string>d</string>
+            <key>zero</key>
+            <string>Realiza %d repeticiones</string>
+            <key>one</key>
+            <string>Realiza %d repetición</string>
+            <key>two</key>
+            <string>Realiza %d repeticiones</string>
+            <key>few</key>
+            <string>Realiza %d repeticiones</string>
+            <key>many</key>
+            <string>Realiza %d repeticiones</string>
+            <key>other</key>
+            <string>Realiza %d repeticiones</string>
+        </dict>
+    </dict>
+  <key>auth.code.retry.attempts</key>
+  <dict>
+      <key>NSStringLocalizedFormatKey</key>
+      <string>%#@count_var@</string>
+      <key>count_var</key>
+      <dict>
+          <key>NSStringFormatSpecTypeKey</key>
+          <string>NSStringPluralRuleType</string>
+          <key>NSStringFormatValueTypeKey</key>
+          <string>d</string>
+          <key>zero</key>
+          <string>Quedan %d solicitudes de SMS</string>
+          <key>one</key>
+          <string>Queda %d solicitud de SMS</string>
+          <key>two</key>
+          <string>Quedan %d solicitudes de SMS</string>
+          <key>few</key>
+          <string>Quedan %d solicitudes de SMS</string>
+          <key>many</key>
+          <string>Quedan %d solicitudes de SMS</string>
+          <key>other</key>
+          <string>Quedan %d solicitudes de SMS</string>
+      </dict>
+  </dict>
+  <key>auth.code.error</key>
+  <dict>
+      <key>NSStringLocalizedFormatKey</key>
+      <string>%#@count_var@</string>
+      <key>count_var</key>
+      <dict>
+          <key>NSStringFormatSpecTypeKey</key>
+          <string>NSStringPluralRuleType</string>
+          <key>NSStringFormatValueTypeKey</key>
+          <string>d</string>
+          <key>zero</key>
+          <string>Código incorrecto
+Quedan %d intentos de inicio de sesión</string>
+          <key>one</key>
+          <string>Código incorrecto
+Queda %d intento de inicio de sesión</string>
+          <key>two</key>
+          <string>Código incorrecto
+Quedan %d intentos de inicio de sesión</string>
+          <key>few</key>
+          <string>Código incorrecto
+Quedan %d intentos de inicio de sesión</string>
+          <key>many</key>
+          <string>Código incorrecto
+Quedan %d intentos de inicio de sesión</string>
+          <key>other</key>
+          <string>Código incorrecto
+Quedan %d intentos de inicio de sesión</string>
+      </dict>
+  </dict>
+  <key>main.meditations.available</key>
+  <dict>
+      <key>NSStringLocalizedFormatKey</key>
+      <string>%#@count_var@</string>
+      <key>count_var</key>
+      <dict>
+          <key>NSStringFormatSpecTypeKey</key>
+          <string>NSStringPluralRuleType</string>
+          <key>NSStringFormatValueTypeKey</key>
+          <string>d</string>
+          <key>zero</key>
+          <string>No hay meditaciones disponibles</string>
+          <key>one</key>
+          <string>%d meditación disponible</string>
+          <key>two</key>
+          <string>%d meditaciones disponibles</string>
+          <key>few</key>
+          <string>%d meditaciones disponibles</string>
+          <key>many</key>
+          <string>%d meditaciones disponibles</string>
+          <key>other</key>
+          <string>%d meditaciones disponibles</string>
+      </dict>
+  </dict>
+  <key>main.treanings.exersice.amount</key>
+  <dict>
+      <key>NSStringLocalizedFormatKey</key>
+      <string>%#@count_var@</string>
+      <key>count_var</key>
+      <dict>
+          <key>NSStringFormatSpecTypeKey</key>
+          <string>NSStringPluralRuleType</string>
+          <key>NSStringFormatValueTypeKey</key>
+          <string>d</string>
+          <key>zero</key>
+          <string>%d ejercicios</string>
+          <key>one</key>
+          <string>%d ejercicio</string>
+          <key>two</key>
+          <string>%d ejercicios</string>
+          <key>few</key>
+          <string>%d ejercicios</string>
+          <key>many</key>
+          <string>%d ejercicios</string>
+          <key>other</key>
+          <string>%d ejercicios</string>
+      </dict>
+  </dict>
+  <key>main.courses.exersice.amount</key>
+  <dict>
+      <key>NSStringLocalizedFormatKey</key>
+      <string>%#@count_var@</string>
+      <key>count_var</key>
+      <dict>
+          <key>NSStringFormatSpecTypeKey</key>
+          <string>NSStringPluralRuleType</string>
+          <key>NSStringFormatValueTypeKey</key>
+          <string>d</string>
+          <key>zero</key>
+          <string>%d sesiones</string>
+          <key>one</key>
+          <string>%d sesión</string>
+          <key>two</key>
+          <string>%d sesiones</string>
+          <key>few</key>
+          <string>%d sesiones</string>
+          <key>many</key>
+          <string>%d sesiones</string>
+          <key>other</key>
+          <string>%d sesiones</string>
+      </dict>
+  </dict>
+  <key>main.price</key>
+  <dict>
+      <key>NSStringLocalizedFormatKey</key>
+      <string>%#@count_var@</string>
+      <key>count_var</key>
+      <dict>
+          <key>NSStringFormatSpecTypeKey</key>
+          <string>NSStringPluralRuleType</string>
+          <key>NSStringFormatValueTypeKey</key>
+          <string>d</string>
+          <key>zero</key>
+          <string>%d puntos</string>
+          <key>one</key>
+          <string>%d punto</string>
+          <key>two</key>
+          <string>%d puntos</string>
+          <key>few</key>
+          <string>%d puntos</string>
+          <key>many</key>
+          <string>%d puntos</string>
+          <key>other</key>
+          <string>%d puntos</string>
+      </dict>
+  </dict>
+  <key>main.minutes</key>
+  <dict>
+      <key>NSStringLocalizedFormatKey</key>
+      <string>%#@count_var@</string>
+      <key>count_var</key>
+      <dict>
+          <key>NSStringFormatSpecTypeKey</key>
+          <string>NSStringPluralRuleType</string>
+          <key>NSStringFormatValueTypeKey</key>
+          <string>d</string>
+          <key>zero</key>
+          <string>%d minutos</string>
+          <key>one</key>
+          <string>%d minuto</string>
+          <key>two</key>
+          <string>%d minutos</string>
+          <key>few</key>
+          <string>%d minutos</string>
+          <key>many</key>
+          <string>%d minutos</string>
+          <key>other</key>
+          <string>%d minutos</string>
+      </dict>
+  </dict>
+  <key>training.details.finished.body.full</key>
+  <dict>
+      <key>NSStringLocalizedFormatKey</key>
+      <string>%#@count_var@</string>
+      <key>count_var</key>
+      <dict>
+          <key>NSStringFormatSpecTypeKey</key>
+          <string>NSStringPluralRuleType</string>
+          <key>NSStringFormatValueTypeKey</key>
+          <string>d</string>
+          <key>zero</key>
+          <string>Entrenamiento completado con éxito.
+Se te otorgarán %d puntos</string>
+          <key>one</key>
+          <string>Entrenamiento completado con éxito.
+Se te otorgará %d punto</string>
+          <key>two</key>
+          <string>Entrenamiento completado con éxito.
+Se te otorgarán %d puntos</string>
+          <key>few</key>
+          <string>Entrenamiento completado con éxito.
+Se te otorgarán %d puntos</string>
+          <key>many</key>
+          <string>Entrenamiento completado con éxito.
+Se te otorgarán %d puntos</string>
+          <key>other</key>
+          <string>Entrenamiento completado con éxito.
+Se te otorgarán %d puntos</string>
+      </dict>
+  </dict>
+  <key>exercise.detail.execution.repetitions</key>
+  <dict>
+      <key>NSStringLocalizedFormatKey</key>
+      <string>%#@count_var@</string>
+      <key>count_var</key>
+      <dict>
+          <key>NSStringFormatSpecTypeKey</key>
+          <string>NSStringPluralRuleType</string>
+          <key>NSStringFormatValueTypeKey</key>
+          <string>d</string>
+          <key>zero</key>
+          <string>Realiza %d repeticiones</string>
+          <key>one</key>
+          <string>Realiza %d repetición</string>
+          <key>two</key>
+          <string>Realiza %d repeticiones</string>
+          <key>few</key>
+          <string>Realiza %d repeticiones</string>
+          <key>many</key>
+          <string>Realiza %d repeticiones</string>
+          <key>other</key>
+          <string>Realiza %d repeticiones</string>
+      </dict>
+  </dict>
+  <key>courses.practices.count</key>
+  <dict>
+      <key>NSStringLocalizedFormatKey</key>
+      <string>%#@count_var@</string>
+      <key>count_var</key>
+      <dict>
+          <key>NSStringFormatSpecTypeKey</key>
+          <string>NSStringPluralRuleType</string>
+          <key>NSStringFormatValueTypeKey</key>
+          <string>d</string>
+          <key>zero</key>
+          <string>%d sesiones</string>
+          <key>one</key>
+          <string>%d sesión</string>
+          <key>two</key>
+          <string>%d sesiones</string>
+          <key>few</key>
+          <string>%d sesiones</string>
+          <key>many</key>
+          <string>%d sesiones</string>
+          <key>other</key>
+          <string>%d sesiones</string>
+      </dict>
+  </dict>
+  <key>bonus.count</key>
+  <dict>
+      <key>NSStringLocalizedFormatKey</key>
+      <string>%#@count_var@</string>
+      <key>count_var</key>
+      <dict>
+          <key>NSStringFormatSpecTypeKey</key>
+          <string>NSStringPluralRuleType</string>
+          <key>NSStringFormatValueTypeKey</key>
+          <string>d</string>
+          <key>zero</key>
+          <string>%d puntos de bonificación</string>
+          <key>one</key>
+          <string>%d punto de bonificación</string>
+          <key>two</key>
+          <string>%d puntos de bonificación</string>
+          <key>few</key>
+          <string>%d puntos de bonificación</string>
+          <key>many</key>
+          <string>%d puntos de bonificación</string>
+          <key>other</key>
+          <string>%d puntos de bonificación</string>
+      </dict>
+  </dict>
+  <key>bonuses.award</key>
+  <dict>
+      <key>NSStringLocalizedFormatKey</key>
+      <string>%d/%#@total@</string>
+      <key>total</key>
+      <dict>
+          <key>NSStringFormatSpecTypeKey</key>
+          <string>NSStringPluralRuleType</string>
+          <key>NSStringFormatValueTypeKey</key>
+          <string>d</string>
+          <key>zero</key>
+          <string>%2$d puntos</string>
+          <key>one</key>
+          <string>%2$d puntos</string>
+          <key>two</key>
+          <string>%2$d puntos</string>
+          <key>few</key>
+          <string>%2$d puntos</string>
+          <key>many</key>
+          <string>%2$d puntos</string>
+          <key>other</key>
+          <string>%2$d puntos</string>
+      </dict>
+  </dict>
+  <key>statistics.competitions.challenges</key>
+  <dict>
+      <key>NSStringLocalizedFormatKey</key>
+      <string>%#@count_var@</string>
+      <key>count_var</key>
+      <dict>
+          <key>NSStringFormatSpecTypeKey</key>
+          <string>NSStringPluralRuleType</string>
+          <key>NSStringFormatValueTypeKey</key>
+          <string>d</string>
+          <key>zero</key>
+          <string>desafíos</string>
+          <key>one</key>
+          <string>desafío</string>
+          <key>two</key>
+          <string>desafíos</string>
+          <key>few</key>
+          <string>desafíos</string>
+          <key>many</key>
+          <string>desafíos</string>
+          <key>other</key>
+          <string>desafíos</string>
+      </dict>
+  </dict>
+  <key>statistics.courses.trainings.planned</key>
+  <dict>
+      <key>NSStringLocalizedFormatKey</key>
+      <string>%#@count_var@</string>
+      <key>count_var</key>
+      <dict>
+          <key>NSStringFormatSpecTypeKey</key>
+          <string>NSStringPluralRuleType</string>
+          <key>NSStringFormatValueTypeKey</key>
+          <string>d</string>
+          <key>zero</key>
+          <string>entrenamientos</string>
+          <key>one</key>
+          <string>entrenamiento</string>
+          <key>two</key>
+          <string>entrenamientos</string>
+          <key>few</key>
+          <string>entrenamientos</string>
+          <key>many</key>
+          <string>entrenamientos</string>
+          <key>other</key>
+          <string>entrenamientos</string>
+      </dict>
+  </dict>
+  <key>events.detail.participants.number</key>
+  <dict>
+      <key>NSStringLocalizedFormatKey</key>
+      <string>%#@count_var@</string>
+      <key>count_var</key>
+      <dict>
+          <key>NSStringFormatSpecTypeKey</key>
+          <string>NSStringPluralRuleType</string>
+          <key>NSStringFormatValueTypeKey</key>
+          <string>d</string>
+          <key>zero</key>
+          <string>Completado por %d personas</string>
+          <key>one</key>
+          <string>Completado por %d persona</string>
+          <key>two</key>
+          <string>Completado por %d personas</string>
+          <key>few</key>
+          <string>Completado por %d personas</string>
+          <key>many</key>
+          <string>Completado por %d personas</string>
+          <key>other</key>
+          <string>Completado por %d personas</string>
+      </dict>
+  </dict>
+  <key>challenges.details.age.group.full</key>
+  <dict>
+      <key>NSStringLocalizedFormatKey</key>
+      <string>De %d a %#@upper_age@</string>
+      <key>upper_age</key>
+      <dict>
+          <key>NSStringFormatSpecTypeKey</key>
+          <string>NSStringPluralRuleType</string>
+          <key>NSStringFormatValueTypeKey</key>
+          <string>d</string>
+          <key>zero</key>
+          <string>%2$d años</string>
+          <key>one</key>
+          <string>%2$d año</string>
+          <key>two</key>
+          <string>%2$d años</string>
+          <key>few</key>
+          <string>%2$d años</string>
+          <key>many</key>
+          <string>%2$d años</string>
+          <key>other</key>
+          <string>%2$d años</string>
+      </dict>
+  </dict>
+  <key>challenges.details.rating.boundary.full</key>
+  <dict>
+      <key>NSStringLocalizedFormatKey</key>
+      <string>De %d a %#@count_var@</string>
+      <key>count_var</key>
+      <dict>
+          <key>NSStringFormatSpecTypeKey</key>
+          <string>NSStringPluralRuleType</string>
+          <key>NSStringFormatValueTypeKey</key>
+          <string>d</string>
+          <key>zero</key>
+          <string>%2$d puntos</string>
+          <key>one</key>
+          <string>%2$d punto</string>
+          <key>two</key>
+          <string>%2$d puntos</string>
+          <key>few</key>
+          <string>%2$d puntos</string>
+          <key>many</key>
+          <string>%2$d puntos</string>
+          <key>other</key>
+          <string>%2$d puntos</string>
+      </dict>
+  </dict>
+  <key>challenges.details.participants.number</key>
+  <dict>
+      <key>NSStringLocalizedFormatKey</key>
+      <string>%#@count_var@</string>
+      <key>count_var</key>
+      <dict>
+          <key>NSStringFormatSpecTypeKey</key>
+          <string>NSStringPluralRuleType</string>
+          <key>NSStringFormatValueTypeKey</key>
+          <string>d</string>
+          <key>zero</key>
+          <string>Se unieron %d personas</string>
+          <key>one</key>
+          <string>Se unió %d persona</string>
+          <key>two</key>
+          <string>Se unieron %d personas</string>
+          <key>few</key>
+          <string>Se unieron %d personas</string>
+          <key>many</key>
+          <string>Se unieron %d personas</string>
+          <key>other</key>
+          <string>Se unieron %d personas</string>
+      </dict>
+  </dict>
+  <key>challenges.finish.challenge.body</key>
+  <dict>
+      <key>NSStringLocalizedFormatKey</key>
+      <string>%#@count_var@</string>
+      <key>count_var</key>
+      <dict>
+          <key>NSStringFormatSpecTypeKey</key>
+          <string>NSStringPluralRuleType</string>
+          <key>NSStringFormatValueTypeKey</key>
+          <string>d</string>
+          <key>zero</key>
+          <string>Челлендж успешно завершен.
+              Вам будет начислено %d очков рейтинга</string>
+          <key>one</key>
+          <string>Челлендж успешно завершен.
+              Вам будет начислено %d очко рейтинга</string>
+          <key>two</key>
+          <string>Челлендж успешно завершен.
+              Вам будет начислено %d очка рейтинга</string>
+          <key>few</key>
+          <string>Челлендж успешно завершен.
+              Вам будет начислено %d очка рейтинга</string>
+          <key>many</key>
+          <string>Челлендж успешно завершен.
+              Вам будет начислено %d очков рейтинга</string>
+          <key>other</key>
+          <string>Челлендж успешно завершен.
+              Вам будет начислено %d очков рейтинга</string>
+      </dict>
+  </dict>
+</dict>
+</plist>

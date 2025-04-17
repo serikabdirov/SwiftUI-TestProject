@@ -1,0 +1,58 @@
+//
+//  activityChallenges.swift
+//  R
+//
+//  Created by Nikita Ziganshin on 07.04.2025.
+//  Copyright © 2025 Spider Group. All rights reserved.
+//
+
+[
+    {
+        "award_rating_points": 114,
+            "completed_practices": 0,
+            "end_date": "2025-04-01",
+            "entity_status": "completed",
+            "icon": "https://storage.yandexcloud.net/ball-in-media/cover/challenge.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=YCAJEO1NAoqrKPdTGNBngNkjV%2F20250407%2Fru-central1%2Fs3%2Faws4_request&X-Amz-Date=20250407T061715Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=2d4a09e6aed4bc73110f9baa9117e571d586cdedfd18c4c1a5a2b3fbbcb731ab",
+            "id": 1,
+            "is_author": false,
+            "level": "beginner",
+            "multiplier": null,
+            "number_of_practices": 3,
+            "record_id": null,
+            "start_date": "2025-03-26",
+            "status": "not_started",
+            "title": "Заголовок"
+    },
+    {
+        "award_rating_points": 114,
+            "completed_practices": 0,
+            "end_date": "2025-04-14",
+            "entity_status": "running",
+            "icon": "https://storage.yandexcloud.net/ball-in-media/cover/challenge.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=YCAJEO1NAoqrKPdTGNBngNkjV%2F20250407%2Fru-central1%2Fs3%2Faws4_request&X-Amz-Date=20250407T061715Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=2d4a09e6aed4bc73110f9baa9117e571d586cdedfd18c4c1a5a2b3fbbcb731ab",
+            "id": 2,
+            "is_author": false,
+            "level": "beginner",
+            "multiplier": null,
+            "number_of_practices": 3,
+            "record_id": null,
+            "start_date": "2025-03-27",
+            "status": "not_started",
+            "title": "title2"
+    },
+    {
+        "award_rating_points": 111,
+            "completed_practices": 0,
+            "end_date": "2025-04-12",
+            "entity_status": "running",
+            "icon": "https://storage.yandexcloud.net/ball-in-media/cover/%D0%92%D1%8B%D0%B1%D0%BE%D1%80_%D0%BE%D0%B1%D0%BB%D0%BE%D0%B6%D0%BA%D0%B83x_wP9xJlB.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=YCAJEO1NAoqrKPdTGNBngNkjV%2F20250407%2Fru-central1%2Fs3%2Faws4_request&X-Amz-Date=20250407T061715Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=be622d2d1deb52e4eeb57c9e1ef709fc2f5c9ce504f0569661e6079fa8f54bb7",
+            "id": 26,
+            "is_author": false,
+            "level": "beginner",
+            "multiplier": null,
+            "number_of_practices": 3,
+            "record_id": null,
+            "start_date": "2025-04-04",
+            "status": "not_started",
+            "title": "Тестовый челлендж(изменено)"
+    },
+]

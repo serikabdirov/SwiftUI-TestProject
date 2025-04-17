@@ -1,0 +1,72 @@
+//
+// {{ name }}ViewController.swift
+//
+{% if author %}
+// Created by {{ author }}.
+{% endif %}
+// Copyright © {{ year }} Spider Group. All rights reserved.
+//
+
+import DesignSystem
+import RxCocoa
+import RxSwift
+
+public protocol {{ name }}ViewControllerTag: UIViewController {}
+
+public final class {{ name }}ViewController:
+    UIViewController,
+    {{ name }}ViewControllerTag
+{
+
+    // MARK: - Private properties
+
+    private let viewModel: {{ name }}ViewModel
+    private lazy var disposeBag = DisposeBag()
+
+    // MARK: - Init
+
+    public init(viewModel: {{ name }}ViewModel) {
+        self.viewModel = viewModel
+        super.init(nibName: nil, bundle: nil)
+    }
+
+    @available(*, unavailable)
+    public required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+
+    // MARK: - Lifecycle
+
+    override public func loadView() {
+        super.loadView()
+        inject()
+    }
+
+    override public func viewDidLoad() {
+        super.viewDidLoad()
+        view.backgroundColor = .Main.white
+        setupCommonBinding()
+    }
+    
+    // MARK: - Binding
+    
+    private func setupCommonBinding() {
+        // track loading
+        viewModel.isLoading
+            .drive(rx.showHUDInView)
+            .disposed(by: disposeBag)
+            
+        // show error messages
+        viewModel.errorMessage
+            .emit(to: rx.showError)
+            .disposed(by: disposeBag)
+    }
+    
+    private func inject() {
+        let view = {{ name }}View(data: .init(data: 0))
+        view.injectIn(self)
+    }
+
+}
+
+extension {{ name }}ViewController: NavigationBarAppearanceProvider, StatusBarAppearanceProvider {}
