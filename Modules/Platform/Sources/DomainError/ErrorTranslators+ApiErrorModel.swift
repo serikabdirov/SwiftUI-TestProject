@@ -10,7 +10,7 @@ import Networking
 import R
 
 public extension ErrorTranslators {
-    final class BallErrorTranslator<DomainErrorCode>: ErrorTranslator
+    final class ErrorTranslator<DomainErrorCode>: ErrorTranslatorProtocol
         where
         DomainErrorCode: RawRepresentable,
         DomainErrorCode.RawValue == String
@@ -72,8 +72,8 @@ public extension ErrorTranslators {
 // MARK: - Some Translators
 
 public extension ErrorTranslators {
-    static func unspecifiedDomainErrorTranslator() -> BallErrorTranslator<UnspecifiedDomainErrorCode> {
-        BallErrorTranslator<UnspecifiedDomainErrorCode>(
+    static func unspecifiedDomainErrorTranslator() -> ErrorTranslator<UnspecifiedDomainErrorCode> {
+        ErrorTranslator<UnspecifiedDomainErrorCode>(
             defaultCode: .unknown,
             defaultMessage: RStrings.Ls.Common.Error.Something.Went.wrong
         )

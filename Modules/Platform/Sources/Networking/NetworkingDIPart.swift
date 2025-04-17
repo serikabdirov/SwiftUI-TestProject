@@ -62,12 +62,6 @@ class NetworkingDIPart: DIPart {
         }
         .as(ApiClient.self, tag: ApiClientAuth.self)
         .lifetime(.perRun(.strong))
-        
-        // LocalStorage        
-        container.register {
-            LocalStorage.init()
-        }
-        .lifetime(.perRun(.strong))
     }
 }
 

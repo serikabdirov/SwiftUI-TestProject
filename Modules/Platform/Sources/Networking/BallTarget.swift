@@ -8,7 +8,6 @@
 import Foundation
 @_exported import Networking
 
-
 private struct TargetTypeWrapper: TargetType {
     let baseURL: URL
     let path: String
@@ -33,19 +32,9 @@ public protocol BallTarget: TargetType {
 }
 
 // swiftlint:disable force_unwrapping
-public extension BallTarget {    
-    
+public extension BallTarget {
     var baseURL: URL {
-        switch Environment.scheme {
-        case .dev:
-            URL(string: "https://dev.back.ball-in.spider.ru")!
-        case .stage:
-            URL(string: "https://stage.ball-in.com")!
-        case .prod:
-            URL(string: "#")!
-        case .mock:
-            URL(string: "file:///")!
-        }
+        URL(string: "https://dev.back.ball-in.spider.ru")!
     }
 
     var timeout: TimeInterval { 30 }
@@ -54,12 +43,6 @@ public extension BallTarget {
         let superTarget = TargetTypeWrapper(target: self)
         var request = try superTarget.asURLRequest()
         request.timeoutInterval = timeout
-        if shouldAuthorize {
-            request.headers.add(
-                name: BallTargetKeys.shouldAuthorizeHeader,
-                value: "true"
-            )
-        }
         return request
     }
 }

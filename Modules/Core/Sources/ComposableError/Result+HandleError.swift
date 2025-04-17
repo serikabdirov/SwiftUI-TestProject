@@ -9,7 +9,7 @@
 import Foundation
 
 public extension Result {
-    func translateError(using translator: any ErrorTranslator) -> Result<Success, Error> {
+    func translateError(using translator: any ErrorTranslatorProtocol) -> Result<Success, Error> {
         mapError { translator.translate(from: $0) }
     }
 }

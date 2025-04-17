@@ -3,7 +3,7 @@ import Foundation
 /// Allows to convert error type
 /// * `ToError` - Source error type
 /// * `ExpectedError` - Result error type
-public protocol ErrorTranslator {
+public protocol ErrorTranslatorProtocol {
     associatedtype ToError: ComposableError
     associatedtype ExpectedError: ComposableError
 
@@ -13,7 +13,7 @@ public protocol ErrorTranslator {
 
 public enum ErrorTranslators {}
 
-public extension ErrorTranslator {
+public extension ErrorTranslatorProtocol {
     func eraseToAnyErrorTranslator() -> AnyErrorTranslator<ExpectedError, ToError> {
         AnyErrorTranslator(self)
     }

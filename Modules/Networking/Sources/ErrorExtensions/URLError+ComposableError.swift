@@ -1,7 +1,7 @@
 import Core
 import Foundation
 
-extension URLError: ComposableError {
+extension URLError: @retroactive ComposableError {
     public var underlyingComposableError: ComposableError? { nil }
 
     public var identifiableCode: String {

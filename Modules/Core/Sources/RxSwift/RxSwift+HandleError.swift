@@ -67,7 +67,7 @@ public extension PrimitiveSequence where Trait == SingleTrait {
         )
     }
 
-    func translateError<T: ErrorTranslator>(using translator: T) -> Self {
+    func translateError<T: ErrorTranslatorProtocol>(using translator: T) -> Self {
         self.catch { [translator] in throw translator.translate(from: $0) }
     }
 }
