@@ -31,6 +31,7 @@ let appTarget = Target.target(
         .external(name: "Alamofire"),
         .external(name: "SnapKit"),
         .external(name: "RouteComposer"),
+        .external(name: "Factory"),
 
         .module(name: "Platform"),
         .module(name: "DesignSystem"),

@@ -24,6 +24,7 @@ import PackageDescription
             "Pulse": .framework,
             "Lottie": .framework,
             "BottomSheet": .framework,
+            "Factory": .framework,
         ],
         baseSettings: .withCustomConfigurations()
     )
@@ -80,6 +81,10 @@ let package = Package(
         .package(
             url: "https://github.com/joomcode/BottomSheet",
             from: "2.0.5"
+        ),
+        .package(
+            url: "https://github.com/hmlongco/Factory",
+            from: "2.4.0"
         ),
     ]
 )

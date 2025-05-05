@@ -37,6 +37,15 @@
       }
     },
     {
+      "identity" : "factory",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/hmlongco/Factory",
+      "state" : {
+        "revision" : "569e564de1d1c38b0df574360f437d644c3844e2",
+        "version" : "2.4.10"
+      }
+    },
+    {
       "identity" : "iqkeyboardcore",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/hackiftekhar/IQKeyboardCore.git",
