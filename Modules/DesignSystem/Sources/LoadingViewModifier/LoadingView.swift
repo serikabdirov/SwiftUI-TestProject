@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-public struct LoadingView: ViewModifier {
+public struct LoadingViewModifier: ViewModifier {
     @Binding private var isLoading: Bool
 
     init(isLoading: Binding<Bool>) {
@@ -31,6 +31,6 @@ public struct LoadingView: ViewModifier {
 
 public extension View {
     func loadingState(_ isLoading: Binding<Bool>) -> some View {
-        modifier(LoadingView(isLoading: isLoading))
+        modifier(LoadingViewModifier(isLoading: isLoading))
     }
 }

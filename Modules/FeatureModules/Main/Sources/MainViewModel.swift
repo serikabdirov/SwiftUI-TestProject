@@ -9,33 +9,26 @@
 import Combine
 import DesignSystem
 
-class MainViewModel: ObservableObject, LoadableObject {
-    @Published
-    private(set) var loadingState: LoadingState = .idle
+class MainViewModel: ObservableObject {
     @Published
     var data: String?
 
     @Published
     var isLoading = false
 
+    @Published
+    var errorMessage: String?
+
     @MainActor
     public func load() async {
         isLoading = true
-        try? await Task.sleep(for: .seconds(2))
-        data = "Hello, World!"
+        do {
+            try? await Task.sleep(for: .seconds(2))
+            throw CancellationError()
+        } catch {
+            errorMessage = error.localizedDescription
+        }
         isLoading = false
-
-
-//        loadingState = .loading
-//
-//        do {
-//            try await Task.sleep(for: .seconds(2))
-//            throw CancellationError()
-//            data = "Hello, World!"
-//            loadingState = .loaded
-//        } catch {
-//            loadingState = .failed(error)
-//        }
     }
 
     func reload() {

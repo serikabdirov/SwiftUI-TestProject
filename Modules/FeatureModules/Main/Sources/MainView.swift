@@ -16,6 +16,12 @@ public struct MainView: View {
     public var body: some View {
         let _ = Self._printChanges()
 
+        bodyView
+            .loadingState($viewModel.isLoading)
+            .errorAlert($viewModel.errorMessage)
+    }
+
+    private var bodyView: some View {
         VStack {
             Text(viewModel.data ?? "")
 
@@ -28,7 +34,5 @@ public struct MainView: View {
                 await viewModel.load()
             }
         }
-        .loadingState($viewModel.isLoading)
-//        .asyncContent(viewModel)
     }
 }
