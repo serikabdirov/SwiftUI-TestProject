@@ -36,6 +36,8 @@ let appTarget = Target.target(
         .module(name: "Platform"),
         .module(name: "DesignSystem"),
 
+        .featureModule(name: "Main"),
+
     ],
     settings: settings
 )
