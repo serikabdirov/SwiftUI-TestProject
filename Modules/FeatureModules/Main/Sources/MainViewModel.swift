@@ -24,7 +24,7 @@ class MainViewModel: ObservableObject {
         isLoading = true
         do {
             try? await Task.sleep(for: .seconds(2))
-            throw CancellationError()
+//            throw CancellationError()
         } catch {
             errorMessage = error.localizedDescription
         }
