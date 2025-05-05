@@ -28,7 +28,7 @@ public struct MainView: View {
                 await viewModel.load()
             }
         }
-
-        .asyncContent(viewModel)
+        .loadingState($viewModel.isLoading)
+//        .asyncContent(viewModel)
     }
 }
