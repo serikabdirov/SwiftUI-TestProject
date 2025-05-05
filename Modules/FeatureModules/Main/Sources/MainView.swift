@@ -6,14 +6,29 @@
 //  Copyright © 2025 Spider Group. All rights reserved.
 //
 
-import SwiftUI
 import DesignSystem
+import SwiftUI
 
 public struct MainView: View {
-    @ObservedObject var viewModel: MainViewModel
-    
+    @ObservedObject
+    var viewModel: MainViewModel
+
     public var body: some View {
-        Text(viewModel.data ?? "")
-            .asyncContent(viewModel)
+        let _ = Self._printChanges()
+
+        VStack {
+            Text(viewModel.data ?? "")
+
+            Button("Reload") {
+                viewModel.reload()
+            }
+        }
+        .onAppear {
+            Task {
+                await viewModel.load()
+            }
+        }
+
+        .asyncContent(viewModel)
     }
 }

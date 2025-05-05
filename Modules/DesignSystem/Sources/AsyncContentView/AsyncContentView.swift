@@ -8,6 +8,13 @@
 
 import SwiftUI
 
+public enum LoadingState {
+    case idle
+    case loading
+    case loaded
+    case failed(Error)
+}
+
 public struct AsyncContentView<Source: LoadableObject>: ViewModifier {
     @ObservedObject
     var source: Source
@@ -17,20 +24,31 @@ public struct AsyncContentView<Source: LoadableObject>: ViewModifier {
     }
 
     public func body(content: Content) -> some View {
-        switch source.loadingState {
-        case .idle:
-            ProgressView()
-                .onAppear {
-                    Task {
-                        await source.load()
-                    }
-                }
-        case .loading:
-            ProgressView()
-        case let .failed(error):
-            Text(error.localizedDescription)
-        case .loaded:
+        ZStack {
             content
+
+            switch source.loadingState {
+            case .loading:
+                ProgressView()
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                    .background(Color.black.opacity(0.3))
+            case let .failed(error):
+                VStack {
+                    Text(error.localizedDescription)
+                        .foregroundColor(.red)
+                        .multilineTextAlignment(.center)
+                }
+                .padding()
+                .background(
+                    RoundedRectangle(cornerRadius: 10)
+                        .fill(Color.white)
+                        .shadow(radius: 10)
+                )
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                .background(Color.black.opacity(0.3))
+            case .idle, .loaded:
+                EmptyView() // ничего поверх content
+            }
         }
     }
 }

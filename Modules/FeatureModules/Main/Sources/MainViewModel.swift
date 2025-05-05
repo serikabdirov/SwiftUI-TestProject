@@ -17,8 +17,17 @@ class MainViewModel: ObservableObject, LoadableObject {
     public func load() async {
         loadingState = .loading
 
-        try? await Task.sleep(for: .seconds(2))
-        data = "Hello, World!"
-        loadingState = .loaded
+        do {
+            try await Task.sleep(for: .seconds(2))
+            throw CancellationError()
+            data = "Hello, World!"
+            loadingState = .loaded
+        } catch {
+            loadingState = .failed(error)
+        }
+    }
+
+    func reload() {
+        Task { await load() }
     }
 }
