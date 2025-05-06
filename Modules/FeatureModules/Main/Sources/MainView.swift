@@ -10,14 +10,14 @@ import DesignSystem
 import SwiftUI
 import Factory
 
-extension Container {
+extension MainContainer {
     var mainViewModel: Factory<MainViewModel> {
         self { MainViewModel() }
     }
 }
 
 public struct MainView: View {
-    @InjectedObservable(\.mainViewModel) var viewModel
+    @InjectedObservable(\MainContainer.mainViewModel) var viewModel
 
     public var body: some View {
         let _ = Self._printChanges()
@@ -40,5 +40,14 @@ public struct MainView: View {
                 await viewModel.load()
             }
         }
+    }
+}
+
+struct MainView_Previews: PreviewProvider {
+    static var previews: some View {
+        let _ = MainContainer.shared.mainService.register {
+            MockServiceImpl()
+        }
+        return MainView()
     }
 }

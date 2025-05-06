@@ -18,7 +18,7 @@ class MainViewModel {
     var errorMessage: String?
 
     @ObservationIgnored
-    @Injected(\.mainService) private var service
+    @Injected(\MainContainer.mainService) private var service
 
     @MainActor
     public func load() async {
