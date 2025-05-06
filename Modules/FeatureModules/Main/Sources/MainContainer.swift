@@ -7,9 +7,11 @@
 //
 
 import Factory
+import Platform
 
 final class MainContainer: SharedContainer {
-    @TaskLocal static var shared = MainContainer()
+    @TaskLocal
+    static var shared = MainContainer()
     let manager = ContainerManager()
 }
 
@@ -17,8 +19,14 @@ final class MainContainer: SharedContainer {
 
 extension MainContainer {
     var mainService: Factory<MainService> {
-        self { MainServiceImpl(apiClient: Container.shared.mainApiClient() ) }
-            .onPreview { MockServiceImpl() }
+        self {
+            MainServiceImpl(
+                apiClient: NetworkingContainer.shared.apiClient(),
+                errorTranslator: ErrorTranslators.unspecifiedDomainErrorTranslator()
+                    .eraseToAnyErrorTranslator()
+            )
+        }
+        .onPreview { MockServiceImpl() }
     }
 }
 

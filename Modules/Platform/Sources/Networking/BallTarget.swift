@@ -34,7 +34,16 @@ public protocol BallTarget: TargetType {
 // swiftlint:disable force_unwrapping
 public extension BallTarget {
     var baseURL: URL {
-        URL(string: "https://dev.back.ball-in.spider.ru")!
+        switch Environment.scheme {
+        case .dev:
+            URL(string: "https://dev.back.ball-in.spider.ru")!
+        case .stage:
+            URL(string: "https://stage.ball-in.com")!
+        case .prod:
+            URL(string: "#")!
+        case .mock:
+            URL(string: "file:///")!
+        }
     }
 
     var timeout: TimeInterval { 30 }
