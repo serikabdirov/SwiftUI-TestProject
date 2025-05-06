@@ -24,8 +24,7 @@ class MainViewModel {
     public func load() async {
         isLoading = true
         do {
-            try await service.load()
-            data = "Hello, World!"
+            data = try await service.load()
         } catch {
             errorMessage = error.localizedDescription
         }

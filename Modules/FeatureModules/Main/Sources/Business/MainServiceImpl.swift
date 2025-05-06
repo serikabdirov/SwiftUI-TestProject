@@ -18,8 +18,8 @@ final class MainServiceImpl {
 }
 
 extension MainServiceImpl: MainService {
-    public func load() async throws {
-        print(try await apiClient.load())
+    public func load() async throws -> String{
         try await Task.sleep(for: .seconds(2))
+        return try await apiClient.load()
     }
 }

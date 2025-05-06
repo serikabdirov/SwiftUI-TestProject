@@ -10,14 +10,10 @@ import DesignSystem
 import SwiftUI
 import Factory
 
-extension MainContainer {
-    var mainViewModel: Factory<MainViewModel> {
-        self { MainViewModel() }
-    }
-}
-
 public struct MainView: View {
     @InjectedObservable(\MainContainer.mainViewModel) var viewModel
+
+    public init() {}
 
     public var body: some View {
         let _ = Self._printChanges()

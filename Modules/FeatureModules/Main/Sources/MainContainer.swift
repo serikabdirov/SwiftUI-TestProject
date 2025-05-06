@@ -13,9 +13,19 @@ final class MainContainer: SharedContainer {
     let manager = ContainerManager()
 }
 
+// MARK: - Service
+
 extension MainContainer {
     var mainService: Factory<MainService> {
         self { MainServiceImpl(apiClient: Container.shared.mainApiClient() ) }
             .onPreview { MockServiceImpl() }
+    }
+}
+
+// MARK: - ViewModel
+
+extension MainContainer {
+    var mainViewModel: Factory<MainViewModel> {
+        self { MainViewModel() }
     }
 }

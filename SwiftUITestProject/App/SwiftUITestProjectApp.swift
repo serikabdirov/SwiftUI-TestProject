@@ -5,7 +5,7 @@ import Main
 struct SwiftUITestProjectApp: App {
     var body: some Scene {
         WindowGroup {
-            MainBuilder().build()
+            MainView()
         }
     }
 }

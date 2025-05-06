@@ -9,8 +9,9 @@
 final class MockServiceImpl {}
 
 extension MockServiceImpl: MainService {
-    public func load() async throws {
-        print("MOCK")
+    public func load() async throws -> String {
         try await Task.sleep(for: .seconds(2))
+
+        return "MOCK"
     }
 }

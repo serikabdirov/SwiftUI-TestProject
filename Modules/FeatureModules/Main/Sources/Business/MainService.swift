@@ -9,5 +9,5 @@
 import Foundation
 
 public protocol MainService {
-    func load() async throws
+    func load() async throws -> String
 }
