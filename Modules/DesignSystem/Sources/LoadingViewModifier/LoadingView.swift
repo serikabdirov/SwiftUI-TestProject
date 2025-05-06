@@ -9,12 +9,18 @@
 import ActivityIndicatorView
 import SwiftUI
 
-public struct LoadingViewModifier: ViewModifier {
+public struct LoadingViewModifier<ActivityView: View>: ViewModifier {
     @Binding
     private var isLoading: Bool
 
-    init(isLoading: Binding<Bool>) {
+    private let activityView: ActivityView
+
+    init(
+        isLoading: Binding<Bool>,
+        _ activityView: @escaping () -> ActivityView
+    ) {
         self._isLoading = isLoading
+        self.activityView = activityView()
     }
 
     public func body(content: Content) -> some View {
@@ -25,15 +31,21 @@ public struct LoadingViewModifier: ViewModifier {
                 Color.gray.opacity(0.3)
                     .ignoresSafeArea()
 
-                ActivityIndicatorView(isVisible: $isLoading, type: .growingArc(.red, lineWidth: 4))
-                    .frame(width: 50, height: 50)
+                activityView
             }
         }
     }
 }
 
 public extension View {
+    func loadingState(_ isLoading: Binding<Bool>, _ activityView: @escaping () -> some View) -> some View {
+        modifier(LoadingViewModifier(isLoading: isLoading, activityView))
+    }
+
     func loadingState(_ isLoading: Binding<Bool>) -> some View {
-        modifier(LoadingViewModifier(isLoading: isLoading))
+        loadingState(isLoading) {
+            ActivityIndicatorView(isVisible: isLoading, type: .growingArc(.red, lineWidth: 4))
+                .frame(width: 50, height: 50)
+        }
     }
 }

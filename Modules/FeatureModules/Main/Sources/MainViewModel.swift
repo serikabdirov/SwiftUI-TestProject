@@ -23,8 +23,8 @@ class MainViewModel: ObservableObject {
     public func load() async {
         isLoading = true
         do {
-            try? await Task.sleep(for: .seconds(2))
-//            throw CancellationError()
+            try await Task.sleep(for: .seconds(2))
+            data = "Hello, World!"
         } catch {
             errorMessage = error.localizedDescription
         }
