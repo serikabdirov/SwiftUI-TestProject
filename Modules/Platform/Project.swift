@@ -14,9 +14,6 @@ let target = Target.module(
         .external(name: "BottomSheet"),
 
         .module(name: "Networking"),
-
-            .package(product: "ActivityIndicatorView")
-
     ]
 )
 let project = Project.module(name: "Platform", targets: [target])

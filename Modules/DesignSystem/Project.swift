@@ -13,8 +13,6 @@ let target = Target.module(
         .module(name: "Core"),
         .module(name: "Platform"),
         .external(name: "PhoneNumberKit"),
-
-            .package(product: "ActivityIndicatorView")
     ]
 )
 let project = Project.module(name: "DesignSystem", targets: [target])

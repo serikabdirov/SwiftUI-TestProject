@@ -51,9 +51,7 @@ let project = Project(
         textSettings: .textSettings(usesTabs: false, indentWidth: 4, wrapsLines: true),
         xcodeProjectName: Constants.name
     ),
-    packages: [
-        .remote(url: "https://github.com/exyte/ActivityIndicatorView.git", requirement: .upToNextMajor(from: "1.2.0")),
-    ],
+    packages: [],
     settings: settings,
     targets: [appTarget],
     schemes: schemes,

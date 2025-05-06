@@ -6,7 +6,6 @@
 //  Copyright © 2025 Spider Group. All rights reserved.
 //
 
-import ActivityIndicatorView
 import SwiftUI
 
 public struct LoadingViewModifier<ActivityView: View>: ViewModifier {
