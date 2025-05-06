@@ -8,10 +8,16 @@
 
 import DesignSystem
 import SwiftUI
+import Factory
+
+extension Container {
+    var mainViewModel: Factory<MainViewModel> {
+        self { MainViewModel() }
+    }
+}
 
 public struct MainView: View {
-    @Bindable
-    var viewModel: MainViewModel
+    @InjectedObservable(\.mainViewModel) var viewModel
 
     public var body: some View {
         let _ = Self._printChanges()

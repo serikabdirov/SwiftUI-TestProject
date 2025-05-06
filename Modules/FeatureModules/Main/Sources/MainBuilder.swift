@@ -18,6 +18,6 @@ public class MainBuilder: Builder {
     public init() {}
     
     public func build() -> MainView {
-        MainView(viewModel: MainViewModel())
+        MainView()
     }
 }
