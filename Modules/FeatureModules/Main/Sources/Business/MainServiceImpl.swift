@@ -23,7 +23,9 @@ final class MainServiceImpl {
 
 extension MainServiceImpl: MainService {
     public func load() async throws -> String {
-        try await apiClient.load(
+        try await Task.sleep(for: .seconds(2))
+        
+        return try await apiClient.load(
             MainTarget.getData(),
             responseSerializer: .ballResponseSerializer(valueType: MainGetData.self)
         )

@@ -17,6 +17,34 @@ public final class NetworkingContainer: SharedContainer {
 }
 
 public extension NetworkingContainer {
+    var apiClient: Factory<ApiClient> {
+        self {
+            ApiClient(
+                interceptor: Interceptor(
+                    adapters: [
+                        self.timezoneRequestAdapter(),
+                    ]
+                ),
+                eventMonitors: self.eventMonitors()
+            )
+        }
+        .singleton
+    }
+}
+
+extension NetworkingContainer {
+    var timezoneRequestAdapter: Factory<TimezoneRequestAdapter> {
+        self {
+            TimezoneRequestAdapter()
+        }
+    }
+
+//    var authorizationRequestInterceptor: Factory<AuthorizationRequestInterceptor> {
+//        self {
+//            AuthorizationRequestInterceptor(authManager: CredentialsContainer.)
+//        }
+//    }
+
     var pulseLogger: Factory<EventMonitor?> {
         #if PULSE_LOGGING
             self { PulseLoggerEventMonitor(logger: NetworkLogger.sharedInternalLogger) }
@@ -37,18 +65,8 @@ public extension NetworkingContainer {
         self {
             [
                 self.pulseLogger(),
-                self.networkActivityLogger()
+                self.networkActivityLogger(),
             ].compactMap { $0 }
         }
-    }
-
-    var apiClient: Factory<ApiClient> {
-        self {
-            ApiClient(
-                interceptor: nil,
-                eventMonitors: self.eventMonitors()
-            )
-        }
-        .singleton
     }
 }
