@@ -8,22 +8,23 @@
 
 import Combine
 import DesignSystem
+import Factory
+import Observation
 
-class MainViewModel: ObservableObject {
-    @Published
+@Observable
+class MainViewModel {
     var data: String?
-
-    @Published
     var isLoading = false
-
-    @Published
     var errorMessage: String?
+
+    @ObservationIgnored
+    @Injected(\.mainService) private var service
 
     @MainActor
     public func load() async {
         isLoading = true
         do {
-            try await Task.sleep(for: .seconds(2))
+            try await service.load()
             data = "Hello, World!"
         } catch {
             errorMessage = error.localizedDescription
