@@ -45,9 +45,6 @@ public struct MainView: View {
 
 struct MainView_Previews: PreviewProvider {
     static var previews: some View {
-        let _ = MainContainer.shared.mainService.register {
-            MockServiceImpl()
-        }
-        return MainView()
+        MainView()
     }
 }

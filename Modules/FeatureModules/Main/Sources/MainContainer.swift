@@ -16,5 +16,6 @@ final class MainContainer: SharedContainer {
 extension MainContainer {
     var mainService: Factory<MainService> {
         self { MainServiceImpl(apiClient: Container.shared.mainApiClient() ) }
+            .onPreview { MockServiceImpl() }
     }
 }

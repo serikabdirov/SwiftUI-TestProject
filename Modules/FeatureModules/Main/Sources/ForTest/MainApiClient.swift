@@ -6,7 +6,6 @@
 //  Copyright © 2025 Spider Group. All rights reserved.
 //
 
-import Foundation
 import Factory
 
 class MainApiClient {
@@ -18,5 +17,6 @@ class MainApiClient {
 extension Container {
     var mainApiClient: Factory<MainApiClient> {
         self { MainApiClient() }
+            .singleton
     }
 }
