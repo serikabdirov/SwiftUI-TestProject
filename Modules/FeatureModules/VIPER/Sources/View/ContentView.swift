@@ -6,6 +6,12 @@ struct ContentView: View {
     private var viewState
 
     var body: some View {
-        Text("Hello, World!")
+        VStack {
+            Text(viewState.dataString ?? "No data")
+
+            Button("Update data")  {
+                viewState.updateDataButtonTapped()
+            }
+        }
     }
 }

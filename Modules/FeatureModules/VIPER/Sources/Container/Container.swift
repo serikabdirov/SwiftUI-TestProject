@@ -51,5 +51,19 @@ extension VIPERContainer {
         self {
             ViewState()
         }
+        .singleton
     }
  }
+
+
+extension VIPERContainer {
+    func setupPreview() {
+        interactor.register {
+            PreviewInteractor()
+        }
+
+        presenter.register {
+            PreviewPresenter()
+        }
+    }
+}

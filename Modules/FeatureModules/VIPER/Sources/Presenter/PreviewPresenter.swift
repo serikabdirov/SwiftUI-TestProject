@@ -1,5 +1,5 @@
 //
-//  Presenter.swift
+//  PreviewPresenter.swift
 //  VIPER
 //
 //  Created by Серик Абдиров on 13.05.2025.
@@ -7,9 +7,8 @@
 //
 
 import Factory
-import SwiftUI
 
-final class Presenter: VIPERPresenterProtocol {
+final class PreviewPresenter: VIPERPresenterProtocol {
     @Injected(\VIPERContainer.router)
     private var router: VIPERRouterProtocol
 
@@ -21,6 +20,6 @@ final class Presenter: VIPERPresenterProtocol {
 
     func updateData() {
         let newData = interactor.getData()
-        viewState?.dataString = newData
+        viewState?.dataString = "PREVIEW :: \(newData)"
     }
 }

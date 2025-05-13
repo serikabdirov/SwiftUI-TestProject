@@ -1,16 +1,15 @@
 //
-//  Interactor.swift
+//  PreviewInteractor.swift
 //  VIPER
 //
 //  Created by Серик Абдиров on 13.05.2025.
 //  Copyright © 2025 Spider Group. All rights reserved.
 //
 
-import Foundation
 
-final class Interactor: VIPERInteractorProtocol {
+
+final class PreviewInteractor: VIPERInteractorProtocol {
     func getData() -> String {
-        "\(Int.random(in: 0 ..< 1000))"
+        "PreviewInteractor ::: \(Int.random(in: 0 ..< 1000))"
     }
 }
-

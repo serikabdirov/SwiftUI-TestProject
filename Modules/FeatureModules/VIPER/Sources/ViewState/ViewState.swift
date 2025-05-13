@@ -17,4 +17,10 @@ final class ViewState {
     @ObservationIgnored
     @Injected(\VIPERContainer.presenter)
     private var presenter: VIPERPresenterProtocol?
+
+    var dataString: String?
+
+    func updateDataButtonTapped() {
+        presenter?.updateData()
+    }
 }

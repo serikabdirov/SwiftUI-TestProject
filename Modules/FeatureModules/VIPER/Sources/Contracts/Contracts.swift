@@ -13,7 +13,11 @@ import SwiftUI
 protocol VIPERRouterProtocol: RouterProtocol {}
 
 // Presenter
-protocol VIPERPresenterProtocol: PresenterProtocol {}
+protocol VIPERPresenterProtocol: PresenterProtocol {
+    func updateData()
+}
 
 // Interactor
-protocol VIPERInteractorProtocol: InteractorProtocol {}
+protocol VIPERInteractorProtocol: InteractorProtocol {
+    func getData() -> String
+}

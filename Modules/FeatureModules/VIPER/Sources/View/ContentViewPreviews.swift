@@ -9,5 +9,6 @@
 import SwiftUI
 
 #Preview {
-    ContentView()
+    let _ = VIPERContainer.shared.setupPreview()
+    return ContentView()
 }
