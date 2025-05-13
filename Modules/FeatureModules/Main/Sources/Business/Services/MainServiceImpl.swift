@@ -26,7 +26,7 @@ extension MainServiceImpl: MainService {
         try await Task.sleep(for: .seconds(2))
         
         return try await apiClient.load(
-            MainTarget.getData(),
+            MainTargetApi.getData(),
             responseSerializer: .ballResponseSerializer(valueType: MainGetData.self)
         )
         .result

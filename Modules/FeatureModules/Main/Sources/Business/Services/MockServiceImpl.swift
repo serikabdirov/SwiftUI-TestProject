@@ -6,12 +6,14 @@
 //  Copyright © 2025 Spider Group. All rights reserved.
 //
 
+import Platform
+
 final class MockServiceImpl {}
 
 extension MockServiceImpl: MainService {
     public func load() async throws -> String {
         try await Task.sleep(for: .seconds(2))
 
-        return "MOCK"
+        return "MOCK ::: Hello, World!"
     }
 }

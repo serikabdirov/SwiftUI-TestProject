@@ -26,7 +26,18 @@ extension MainContainer {
                     .eraseToAnyErrorTranslator()
             )
         }
-        .onPreview { MockServiceImpl() }
+    }
+
+    func setupMockService() {
+        mainService.register {
+            MockServiceImpl()
+        }
+    }
+
+    func setupErrorService() {
+        mainService.register {
+            ErrorServiceImpl()
+        }
     }
 }
 
