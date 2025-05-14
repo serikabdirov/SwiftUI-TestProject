@@ -37,6 +37,7 @@ let appTarget = Target.target(
         .module(name: "DesignSystem"),
 
         .featureModule(name: "Main"),
+        .featureModule(name: "VIPER"),
 
     ],
     settings: settings
