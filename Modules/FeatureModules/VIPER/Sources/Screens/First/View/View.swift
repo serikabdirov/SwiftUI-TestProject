@@ -2,8 +2,8 @@ import Factory
 import SwiftUI
 import DesignSystem
 
-struct ContentView: View {
-    @InjectedObservable(\VIPERContainer.viewState)
+struct FirstView: View {
+    @InjectedObservable(\FirstContainer.viewState)
     private var viewState
 
     var body: some View {

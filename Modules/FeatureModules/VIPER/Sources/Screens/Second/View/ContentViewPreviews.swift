@@ -1,5 +1,5 @@
 //
-//  Assembly.swift
+//  ContentViewPreviews.swift
 //  VIPER
 //
 //  Created by Серик Абдиров on 13.05.2025.
@@ -8,8 +8,7 @@
 
 import SwiftUI
 
-public final class VIPERAssembly {
-    public init() {}
-
-    public func build() -> some View { FirstView() }
+#Preview {
+    let _ = SecondContainer.shared.setupPreview()
+    return SecondView()
 }

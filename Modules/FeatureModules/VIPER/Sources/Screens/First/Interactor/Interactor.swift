@@ -9,7 +9,7 @@
 import Factory
 import Foundation
 
-final class Interactor: VIPERInteractorProtocol {
+final class FirstInteractor: FirstInteractorProtocol {
     @Injected(\VIPERContainer.service)
     private var service
 

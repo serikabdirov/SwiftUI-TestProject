@@ -10,14 +10,14 @@ import Core
 import SwiftUI
 
 // Router
-protocol VIPERRouterProtocol: RouterProtocol {}
+protocol SecondRouterProtocol: RouterProtocol {}
 
 // Presenter
-protocol VIPERPresenterProtocol: PresenterProtocol {
+protocol SecondPresenterProtocol: PresenterProtocol {
     func updateData()
 }
 
 // Interactor
-protocol VIPERInteractorProtocol: InteractorProtocol {
+protocol SecondInteractorProtocol: InteractorProtocol {
     func getData() async throws -> String
 }

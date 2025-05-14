@@ -1,14 +1,12 @@
 //
-//  ContentViewPreviews.swift
+//  Router.swift
 //  VIPER
 //
 //  Created by Серик Абдиров on 13.05.2025.
 //  Copyright © 2025 Spider Group. All rights reserved.
 //
 
-import SwiftUI
+import Foundation
+import Core
 
-#Preview {
-    let _ = VIPERContainer.shared.setupPreview()
-    return ContentView()
-}
+final class SecondRouter: SecondRouterProtocol {}

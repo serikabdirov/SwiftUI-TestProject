@@ -7,5 +7,6 @@
 //
 
 import Foundation
+import Core
 
-final class Router: VIPERRouterProtocol {}
+final class FirstRouter: FirstRouterProtocol {}

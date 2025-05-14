@@ -9,14 +9,14 @@
 import Factory
 import SwiftUI
 
-final class Presenter: VIPERPresenterProtocol {
-    @Injected(\VIPERContainer.router)
+final class SecondPresenter: SecondPresenterProtocol {
+    @Injected(\SecondContainer.router)
     private var router
 
-    @Injected(\VIPERContainer.interactor)
+    @Injected(\SecondContainer.interactor)
     private var interactor
 
-    @WeakLazyInjected(\VIPERContainer.viewState)
+    @WeakLazyInjected(\SecondContainer.viewState)
     private var viewState
 
     func updateData() {
