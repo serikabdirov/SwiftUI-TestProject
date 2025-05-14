@@ -1,5 +1,6 @@
 import Factory
 import SwiftUI
+import DesignSystem
 
 struct ContentView: View {
     @InjectedObservable(\VIPERContainer.viewState)
@@ -13,5 +14,7 @@ struct ContentView: View {
                 viewState.updateDataButtonTapped()
             }
         }
+        .loadingState($viewState.isLoading)
+        .errorAlert($viewState.errorMessage)
     }
 }

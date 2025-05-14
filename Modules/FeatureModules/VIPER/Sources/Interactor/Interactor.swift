@@ -6,11 +6,14 @@
 //  Copyright © 2025 Spider Group. All rights reserved.
 //
 
+import Factory
 import Foundation
 
 final class Interactor: VIPERInteractorProtocol {
-    func getData() -> String {
-        "\(Int.random(in: 0 ..< 1000))"
+    @Injected(\VIPERContainer.service)
+    private var service
+
+    func getData() async throws -> String {
+        try await service.getData()
     }
 }
-

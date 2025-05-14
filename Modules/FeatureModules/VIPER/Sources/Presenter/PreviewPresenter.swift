@@ -19,7 +19,15 @@ final class PreviewPresenter: VIPERPresenterProtocol {
     private var viewState: ViewState?
 
     func updateData() {
-        let newData = interactor.getData()
-        viewState?.dataString = "PREVIEW :: \(newData)"
+        Task {
+            viewState?.isLoading = true
+            defer { viewState?.isLoading = false }
+            do {
+                let newData = try await interactor.getData()
+                viewState?.dataString = newData
+            } catch {
+                viewState?.errorMessage = error.localizedDescription
+            }
+        }
     }
 }

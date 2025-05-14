@@ -7,11 +7,26 @@
 //
 
 import Factory
+import Platform
 
 final class VIPERContainer: SharedContainer {
     @TaskLocal
     static var shared = VIPERContainer()
     let manager = ContainerManager()
+}
+
+// MARK: - Service
+
+extension VIPERContainer {
+    var service: Factory<VIPERService> {
+        self {
+            VIPERServiceImpl(
+                apiClient: NetworkingContainer.shared.apiClient(),
+                errorTranslator: ErrorTranslators.unspecifiedDomainErrorTranslator()
+                    .eraseToAnyErrorTranslator()
+            )
+        }
+    }
 }
 
 // MARK: - Router
@@ -46,22 +61,17 @@ extension VIPERContainer {
 
 // MARK: - ViewState
 
- extension VIPERContainer {
+extension VIPERContainer {
     var viewState: Factory<ViewState> {
         self {
             ViewState()
         }
         .singleton
     }
- }
-
+}
 
 extension VIPERContainer {
     func setupPreview() {
-        interactor.register {
-            PreviewInteractor()
-        }
-
         presenter.register {
             PreviewPresenter()
         }

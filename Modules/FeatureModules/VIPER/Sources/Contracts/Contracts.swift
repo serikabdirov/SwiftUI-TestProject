@@ -19,5 +19,5 @@ protocol VIPERPresenterProtocol: PresenterProtocol {
 
 // Interactor
 protocol VIPERInteractorProtocol: InteractorProtocol {
-    func getData() -> String
+    func getData() async throws -> String
 }

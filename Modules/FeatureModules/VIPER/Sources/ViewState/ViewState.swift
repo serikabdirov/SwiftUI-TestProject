@@ -12,14 +12,15 @@ import Factory
 
 @Observable
 final class ViewState {
-    private let id = UUID()
-
     @ObservationIgnored
     @Injected(\VIPERContainer.presenter)
-    private var presenter: VIPERPresenterProtocol?
+    private var presenter
 
     var dataString: String?
 
+    var isLoading = false
+    var errorMessage: String?
+    
     func updateDataButtonTapped() {
         presenter?.updateData()
     }

@@ -11,16 +11,24 @@ import SwiftUI
 
 final class Presenter: VIPERPresenterProtocol {
     @Injected(\VIPERContainer.router)
-    private var router: VIPERRouterProtocol
+    private var router
 
     @Injected(\VIPERContainer.interactor)
-    private var interactor: VIPERInteractorProtocol
+    private var interactor
 
     @WeakLazyInjected(\VIPERContainer.viewState)
-    private var viewState: ViewState?
+    private var viewState
 
     func updateData() {
-        let newData = interactor.getData()
-        viewState?.dataString = newData
+        Task {
+            viewState?.isLoading = true
+            defer { viewState?.isLoading = false }
+            do {
+                let newData = try await interactor.getData()
+                viewState?.dataString = newData
+            } catch {
+                viewState?.errorMessage = error.localizedDescription
+            }
+        }
     }
 }
