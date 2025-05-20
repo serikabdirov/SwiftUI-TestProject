@@ -11,5 +11,9 @@ import SwiftUI
 public final class VIPERAssembly {
     public init() {}
 
-    public func build() -> some View { ContentView() }
+    public func build() -> some View { VIPERCoordinatorView() }
+}
+
+#Preview {
+    VIPERAssembly().build()
 }

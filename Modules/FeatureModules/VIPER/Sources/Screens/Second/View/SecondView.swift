@@ -2,8 +2,8 @@ import Factory
 import SwiftUI
 import DesignSystem
 
-struct ContentView: View {
-    @InjectedObservable(\VIPERContainer.viewState)
+struct SecondView: View {
+    @InjectedObservable(\SecondContainer.viewState)
     private var viewState
 
     var body: some View {
@@ -16,5 +16,7 @@ struct ContentView: View {
         }
         .loadingState($viewState.isLoading)
         .errorAlert($viewState.errorMessage)
+
+        .navigationTitle("Second")
     }
 }

@@ -1,5 +1,5 @@
 //
-//  Container.swift
+//  VIPERContainer.swift
 //  VIPER
 //
 //  Created by Серик Абдиров on 13.05.2025.
@@ -26,54 +26,15 @@ extension VIPERContainer {
                     .eraseToAnyErrorTranslator()
             )
         }
-    }
-}
-
-// MARK: - Router
-
-extension VIPERContainer {
-    var router: Factory<VIPERRouterProtocol> {
-        self {
-            Router()
-        }
-    }
-}
-
-// MARK: - Interactor
-
-extension VIPERContainer {
-    var interactor: Factory<VIPERInteractorProtocol> {
-        self {
-            Interactor()
-        }
-    }
-}
-
-// MARK: - Presenter
-
-extension VIPERContainer {
-    var presenter: Factory<VIPERPresenterProtocol?> {
-        self {
-            Presenter()
-        }
-    }
-}
-
-// MARK: - ViewState
-
-extension VIPERContainer {
-    var viewState: Factory<ViewState> {
-        self {
-            ViewState()
-        }
         .singleton
     }
 }
 
 extension VIPERContainer {
-    func setupPreview() {
-        presenter.register {
-            PreviewPresenter()
+    var coordinator: Factory<Coordinator<VIPERRouter>> {
+        self {
+            Coordinator<VIPERRouter>()
         }
+        .singleton
     }
 }

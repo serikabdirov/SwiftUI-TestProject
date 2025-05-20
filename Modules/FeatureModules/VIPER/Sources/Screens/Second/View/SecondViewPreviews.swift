@@ -9,6 +9,6 @@
 import SwiftUI
 
 #Preview {
-    let _ = VIPERContainer.shared.setupPreview()
-    return ContentView()
+    let _ = SecondContainer.shared.setupPreview()
+    return SecondView()
 }

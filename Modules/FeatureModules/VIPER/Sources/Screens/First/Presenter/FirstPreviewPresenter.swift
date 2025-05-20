@@ -1,5 +1,5 @@
 //
-//  Presenter.swift
+//  PreviewPresenter.swift
 //  VIPER
 //
 //  Created by Серик Абдиров on 13.05.2025.
@@ -7,16 +7,19 @@
 //
 
 import Factory
-import SwiftUI
+import Platform
 
-final class Presenter: VIPERPresenterProtocol {
-    @Injected(\VIPERContainer.router)
-    private var router
+final class FirstPreviewPresenter: FirstPresenterProtocol {
+    @Injected(\VIPERContainer.coordinator)
+    private var coordinator
 
-    @Injected(\VIPERContainer.interactor)
+    @Injected(\TabCoordinatorContainer.tabCoordinator)
+    private var tabCoordinator
+
+    @Injected(\FirstContainer.interactor)
     private var interactor
 
-    @WeakLazyInjected(\VIPERContainer.viewState)
+    @WeakLazyInjected(\FirstContainer.viewState)
     private var viewState
 
     func updateData() {
@@ -30,5 +33,17 @@ final class Presenter: VIPERPresenterProtocol {
                 viewState?.errorMessage = error.localizedDescription
             }
         }
+    }
+
+    func showSecond() {
+        coordinator.push(.second)
+    }
+
+    func showMain() {
+        tabCoordinator?.routeToMain()
+    }
+
+    func presentSecond() {
+        coordinator.present(sheet: .second)
     }
 }

@@ -7,11 +7,16 @@
 //
 
 import DesignSystem
-import SwiftUI
 import Factory
+import Platform
+import SwiftUI
 
 public struct MainView: View {
-    @InjectedObservable(\MainContainer.mainViewModel) var viewModel
+    @InjectedObservable(\MainContainer.mainViewModel)
+    var viewModel
+    
+    @Injected(\TabCoordinatorContainer.tabCoordinator)
+    var tabCoordinator
 
     public init() {}
 
@@ -29,6 +34,10 @@ public struct MainView: View {
 
             Button("Reload") {
                 viewModel.reload()
+            }
+
+            Button("VIPER") {
+                tabCoordinator?.routeToVIPER()
             }
         }
         .onAppear {

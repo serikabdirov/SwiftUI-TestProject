@@ -11,9 +11,9 @@ import SwiftUI
 import Factory
 
 @Observable
-final class ViewState {
+final class FirstViewState {
     @ObservationIgnored
-    @Injected(\VIPERContainer.presenter)
+    @Injected(\FirstContainer.presenter)
     private var presenter
 
     var dataString: String?
@@ -23,5 +23,17 @@ final class ViewState {
     
     func updateDataButtonTapped() {
         presenter?.updateData()
+    }
+
+    func showSecondButtonTapped() {
+        presenter?.showSecond()
+    }
+
+    func showMainButtonTapped() {
+        presenter?.showMain()
+    }
+
+    func presentSecondButtonTapped() {
+        presenter?.presentSecond()
     }
 }

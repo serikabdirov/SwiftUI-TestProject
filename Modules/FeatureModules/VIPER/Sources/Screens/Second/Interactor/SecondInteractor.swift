@@ -1,5 +1,5 @@
 //
-//  Interactor.swift
+//  SecondInteractor.swift
 //  VIPER
 //
 //  Created by Серик Абдиров on 13.05.2025.
@@ -9,7 +9,7 @@
 import Factory
 import Foundation
 
-final class Interactor: VIPERInteractorProtocol {
+final class SecondInteractor: SecondInteractorProtocol {
     @Injected(\VIPERContainer.service)
     private var service
 
