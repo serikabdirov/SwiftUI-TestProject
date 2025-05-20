@@ -38,7 +38,7 @@ let appTarget = Target.target(
 
         .featureModule(name: "Main"),
         .featureModule(name: "VIPER"),
-
+        .featureModule(name: "ParameterModule"),
     ],
     settings: settings
 )
